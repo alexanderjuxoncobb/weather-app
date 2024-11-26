@@ -1,0 +1,64 @@
+/* Import modern-normalize to normalize browser inconsistencies */
+@import 'modern-normalize';
+
+/* Global Reset */
+:root {
+  line-height: 1.5; /* More readable line height */
+  box-sizing: border-box; /* Avoids layout issues with padding */
+}
+
+/* Inherit box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0; /* Resets default margins */
+  padding: 0; /* Resets default paddings */
+}
+
+/* Remove bullet points on lists used for nav, etc. */
+ol[role='list'],
+ul[role='list'] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+/* Reset default font sizing for headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Images fill their containers */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Basic reset for form inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* Body takes full width and height of viewport */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* In articles, use default browser heading styles for readability */
+.article :where(h1, h2, h3, h4, h5) {
+  all: revert;
+}
+
+/* Add extra reset as needed below */

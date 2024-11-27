@@ -1,11 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
-  </head>
-  <body>
-    <a href="./template2.html">Template 2</a>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+    <form id="location-form">
+      <label for="location-input">Enter Location:</label>
+      <input type="text" id="location-input" placeholder="e.g., London, UK" required>
+      <button type="submit">Get Weather</button>
+    </form>
+    <div id="weather-display" class="hidden">
+      <h2 id="resolved-address"></h2>
+      <p id="description"></p>
+      <p><strong>Date:</strong> <span id="datetime"></span></p>
+      <p><strong>Max Temp:</strong> <span id="tempmax"></span>°C</p>
+      <p><strong>Min Temp:</strong> <span id="tempmin"></span>°C</p>
+      <p><strong>Current Temp:</strong> <span id="temp"></span>°C</p>
+      <p><strong>Precipitation:</strong> <span id="precip"></span> mm</p>
+    </div>
+  </div>
+</body>
 </html>
